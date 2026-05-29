@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Размер изображений</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background: #f0f2f5;
+            color: #1e2a3a;
+        }
+        h1 {
+            color: #1f6392;
+            border-left: 5px solid #1f6392;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color: #4a627a;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            padding: 20px 25px 25px 25px;
+            transition: transform 0.1s ease;
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: #2c5a6e;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .demo {
+            margin: 20px 0 10px;
+            text-align: center;
+            background: #fefefe;
+            border-radius: 20px;
+            padding: 20px;
+            border: 1px solid #e9edf2;
+        }
+        img {
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #f8fafc;
+        }
+        .info {
+            background: #eef2fa;
+            padding: 12px 18px;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            color: #1e466e;
+        }
+        .experiment-note {
+            background: #fff2df;
+            border-left: 5px solid #f39c12;
+            padding: 12px 18px;
+            border-radius: 14px;
+            margin-top: 20px;
+        }
+        code {
+            background: #eef2fa;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #c7254e;
+        }
+        hr {
+            margin: 25px 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #ccc, transparent);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #7e8c9e;
+            margin-top: 30px;
+        }
+        button {
+            background: #1f6392;
+            border: none;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+        button:hover {
+            background: #0e4a6f;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>1. Оригинальный размер</h2>
+    <p>Изображение отображается в своих реальных размерах (без указания <code>width</code> и <code>height</code>).</p>
+    <div class="demo">
+        <img src="cat.jpg" alt="Пример картинки — оригинальный размер">
+    </div>
+    <div class="info">
+    </div>
+</div>
+
+<div class="card">
+    <h2>2. Ширина = 300px</h2>
+    <p>Задаём только <code>width="300"</code>. Высота автоматически подстраивается, сохраняя пропорции.</p>
+    <div class="demo">
+        <img src="cat.jpg" alt="Картинка с шириной 300px" width="300">
+    </div>
+    <div class="info">
+       
+    </div>
+</div>
+
+<div class="card">
+    <h2>3. Ширина = 150px</h2>
+    <p>Задаём <code>width="150"</code>. Размер уменьшается ещё сильнее, пропорции сохраняются.</p>
+    <div class="demo">
+        <img src="cat.jpg" alt="Картинка с шириной 150px" width="150">
+    </div>
+    <div class="info">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4: Карта изображений (котик и собачка)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #f2f5fa 0%, #e9eef4 100%);
+            min-height: 100vh;
+            padding: 2rem 1.5rem;
+            color: #1f2f3e;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(0px);
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2);
+            padding: 2rem 2rem 2.5rem;
+            transition: all 0.2s;
+            border: 1px solid rgba(255,255,255,0.7);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e4a6e, #2c7da0);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+        }
+
+        .sub {
+            color: #4d6278;
+            border-bottom: 2px solid #dce5f0;
+            display: inline-block;
+            padding-bottom: 6px;
+            margin-bottom: 1.8rem;
+            font-weight: 500;
+        }
+
+        .pet-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .pet-card {
+            flex: 1;
+            min-width: 240px;
+            background: #ffffff;
+            border-radius: 2rem;
+            padding: 1.5rem 1rem 1.8rem;
+            text-align: center;
+            transition: all 0.25s ease;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eef2f8;
+        }
+
+        .pet-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+            border-color: #cbdde9;
+        }
+
+        .image-link {
+            display: inline-block;
+            transition: transform 0.2s ease, filter 0.2s;
+            border-radius: 28px;
+        }
+
+        .image-link:hover {
+            transform: scale(1.02);
+        }
+
+        .pet-img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 32px;
+            box-shadow: 0 12px 22px -8px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s;
+            background: #f8fafc;
+            border: 2px solid white;
+        }
+
+        .pet-label {
+            margin-top: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .pet-label span {
+            background: #eef2fa;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            color: #2c7da0;
+        }
+
+        .instruction {
+            background: #eef2fa;
+            padding: 0.8rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            color: #1f6392;
+            margin: 1rem 0 0.5rem;
+            text-align: center;
+        }
+
+        .info-note {
+            background: #fef6e0;
+            border-left: 4px solid #f4b942;
+            padding: 0.8rem 1.2rem;
+            border-radius: 20px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #5a4a2a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #7f8e9e;
+        }
+
+        code {
+            background: #ecf2f9;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-family: monospace;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1>Котики и собачки</h1>
+        <div class="sub">Задание 4</div>
+        </div>
+
+        <div class="pet-links">
+            <div class="pet-card">
+                <a href="cat.html" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   title="Перейти на страницу о котиках"
+                   class="image-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23FDEBD0' rx='30'/%3E%3Ccircle cx='150' cy='150' r='130' fill='%23F4A261'/%3E%3Ccircle cx='110' cy='120' r='14' fill='%232d2d2d'/%3E%3Ccircle cx='190' cy='120' r='14' fill='%232d2d2d'/%3E%3Cellipse cx='150' cy='180' rx='18' ry='22' fill='%23E76F51'/%3E%3Cpath d='M90 80 L70 50 L110 70 Z' fill='%23D9895A'/%3E%3Cpath d='M210 80 L230 50 L190 70 Z' fill='%23D9895A'/%3E%3Ctext x='150' y='260' font-size='32' font-family='Arial' font-weight='bold' fill='%235C3A21' text-anchor='middle'%3E КОТИК%3C/text%3E%3C/svg%3E"
+                         alt="Изображение котика: рыжий кот с ушками и усами, кликабельно ведет на страницу cat.html"
+                         class="pet-img"
+                         width="220"
+                         height="220">
+                </a>
+                <div class="pet-label">
+                    <span>cat.html</span>
+                </div>
+                <p style="margin-top: 12px; font-size: 0.85rem;">Нажми на котика → страница о кошках</p>
+            </div>
+
+            <!-- БЛОК СОБАЧКИ -->
+            <div class="pet-card">
+                <a href="dog.html" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   title="Перейти на страницу о собачках"
+                   class="image-link">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23E9F0E6' rx='30'/%3E%3Ccircle cx='150' cy='150' r='130' fill='%23C9A87C'/%3E%3Ccircle cx='110' cy='120' r='14' fill='%233C2A21'/%3E%3Ccircle cx='190' cy='120' r='14' fill='%233C2A21'/%3E%3Cpath d='M130 180 Q150 205 170 180' stroke='%237B3F00' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M80 80 L60 50 L100 65 Z' fill='%23B4865C'/%3E%3Cpath d='M220 80 L240 50 L200 65 Z' fill='%23B4865C'/%3E%3Ctext x='150' y='260' font-size='32' font-family='Arial' font-weight='bold' fill='%234D2E10' text-anchor='middle'%3E СОБАЧКА%3C/text%3E%3C/svg%3E"
+                         alt="Изображение собачки: коричневый пёс с добрыми глазами, ведёт на страницу dog.html"
+                         class="pet-img"
+                         width="220"
+                         height="220">
+                </a>
+                <div class="pet-label">
+                    <span>dog.html</span>
+                </div>
+                <p style="margin-top: 12px; font-size: 0.85rem;">Нажми на собачку → страница о псах</p>
+            </div>
+        </div>
+    </div>
+</div>

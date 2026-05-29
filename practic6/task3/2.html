@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картинка-ссылка | Навигация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #f5f7fc 0%, #eef2f8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(0px);
+            border-radius: 48px;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem 2rem 2.8rem;
+            max-width: 620px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.2s;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1f3b4c, #2c6e9e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+        }
+
+        .sub {
+            color: #4c5c6b;
+            border-bottom: 2px solid #e2e8f0;
+            display: inline-block;
+            padding-bottom: 6px;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .instruction {
+            background: #eef2fa;
+            padding: 0.9rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            color: #1f6392;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .instruction span {
+            font-weight: 700;
+        }
+
+        .home-link-block {
+            background: #ffffff;
+            border-radius: 56px;
+            padding: 2rem 1rem;
+            margin: 1.2rem 0 1.8rem;
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04), 0 12px 24px -12px rgba(0,0,0,0.1);
+        }
+
+        .image-link {
+            display: inline-block;
+            transition: transform 0.2s ease, filter 0.2s;
+            border-radius: 28px;
+        }
+
+        .image-link:hover {
+            transform: scale(1.03);
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+        }
+
+        .image-link:active {
+            transform: scale(0.97);
+        }
+
+        .home-icon-svg {
+            width: 128px;
+            height: 128px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 32px;
+            transition: all 0.2s;
+        }
+
+        .caption {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #2d5f7e;
+            background: #eef2fa;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 40px;
+        }
+
+        .info-note {
+            background: #fef6e0;
+            border-left: 4px solid #f4b942;
+            padding: 0.9rem 1.2rem;
+            border-radius: 20px;
+            text-align: left;
+            margin-top: 1.8rem;
+            font-size: 0.9rem;
+            color: #5a4a2a;
+        }
+
+        .info-note code {
+            background: #fff1d6;
+            padding: 2px 8px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-family: monospace;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #8ba0ae;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Картинка-ссылка</h1>
+    <div class="sub">Задание 3</div>
+    </div>
+
+    <div class="home-link-block">
+        <a href="https://yandex.ru" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           title="Перейти на Яндекс.ру"
+           class="image-link">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%23FFD966' /%3E%3Cpath d='M60 20 L20 50 L20 90 L45 90 L45 65 L75 65 L75 90 L100 90 L100 50 Z' fill='%23B46A3A' stroke='%238B4513' stroke-width='2.5' stroke-linejoin='round' /%3E%3Crect x='45' y='72' width='30' height='18' fill='%238B4513' /%3E%3Crect x='50' y='45' width='12' height='15' fill='%234A6FB5' /%3E%3Ccircle cx='85' cy='70' r='4' fill='%23FFF6C9' /%3E%3Ctext x='60' y='108' font-size='14' font-family='Arial, sans-serif' font-weight='bold' fill='%234A3B28' text-anchor='middle'%3EДом%3C/text%3E%3C/svg%3E"
+                 alt="Иконка домика с надписью Дом — кликабельная ссылка на Яндекс"
+                 width="128"
+                 height="128"
+                 class="home-icon-svg">
+        </a>
+        </div>
+    </div>
+</body>
+</html>

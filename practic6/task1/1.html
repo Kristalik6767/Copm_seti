@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простая галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .image-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 16px;
+            max-width: 400px;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 2px dotted #ccc;
+        }
+        .note {
+            background-color: #eef2fa;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: #1e466e;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🐾 Простая галерея</h1>
+<p>Ниже представлены три изображения: котик, собачка и домик.</p>
+
+<div class="gallery">
+    <div class="image-card">
+        <img src="cat.jpg" alt="Пушистый рыжий котик лежит на коврике" width="400" height="300">
+        <div class="caption">🐱 Котик — любимец всей семьи</div>
+    </div>
+
+    <div class="image-card">
+        <img src="dog.jpg" alt="Весёлая собачка породы корги улыбается" width="400" height="300">
+        <div class="caption">🐶 Собачка — верный друг</div>
+    </div>
+
+    <div class="image-card">
+        <img src="house.jpg" alt="Уютный домик с садом и белыми окнами" width="400" height="300">
+        <div class="caption">🏠 Домик в деревне</div>
+    </div>
+</div>
+
+<div class="note">
+</body>
+</html>
