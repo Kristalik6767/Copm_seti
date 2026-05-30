@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика лекции 5 - Главная страница</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fc;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem 2rem 2rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e2edf7;
+        }
+        h1 {
+            color: #1f5e7e;
+            border-left: 5px solid #ff914d;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.9rem;
+        }
+        h2 {
+            color: #2c6e9e;
+            font-size: 1.4rem;
+            margin: 1rem 0 0.8rem 0;
+            border-bottom: 2px solid #dce5f0;
+            display: inline-block;
+        }
+        .ring-link {
+            background: #eef2fa;
+            padding: 0.8rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+        .task-list {
+            list-style: none;
+            margin: 1rem 0 1rem 0;
+        }
+        .task-list li {
+            margin: 0.8rem 0;
+            background: #f9fbfe;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            width: fit-content;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.15s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .note {
+            background: #fff6e5;
+            border-left: 4px solid #ffaa44;
+            padding: 0.8rem 1.2rem;
+            border-radius: 16px;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #7a6300;
+        }
+        code {
+            background: #eef2fa;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-family: monospace;
+        }
+        footer {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: #7c8c9e;
+        }
+        hr {
+            margin: 1rem 0;
+            border: none;
+            height: 1px;
+            background: #e0eaf3;
+        }
+    </style>
+</head>
+<body link="#1f6392" alink="#e67e22" vlink="#8e44ad">
+
+<div class="container">
+    <div class="card">
+        <h1>Страница 1</h1>
+        <div class="ring-link">
+            <strong>Переход:</strong>
+            <a href="Resourses/2.html" title="Перейти на страницу 2 (находится во вложенной папке Resourses)" target="_self">Перейти на Страницу 2</a>
+        </div>
+        <div class="note">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Задания с лекции 4</h2>
+        <p>Каждая ссылка открывает ранее созданную работу в <strong>новом окне</strong> (target="_blank").</p>
+        <ul class="task-list">
+            <li>
+                <a href="1.4.html" target="1.4.html" title="Задание 1 (лекция 4): Многоуровневый список — структура разделов курса (Task3_1.html)">Задание 1</a>
+            </li>
+            <li>
+                <a href="2.4.html" target="2.4.html" title="Задание 2 (лекция 4): Заголовки от h1 до h6 и обычный текст (Task3_2.html)">Задание 2</a>
+            </li>
+            <li>
+                <a href="3.4.html" target="3.4.html" title="Задание 3 (лекция 4): Неупорядоченный список тегов + квадратные маркеры">Задание 3</a>
+            </li>
+            <li>
+                <a href="4.4.html" target="4.4.html" title="Задание 4 (лекция 4): Упорядоченный список заголовков, римская нумерация, start=2">Задание 4</a>
+            </li>
+        </ul>
+        <div class="note">
+        </div>
+    </div>
+    </footer>
+</div>
